@@ -1,3 +1,8 @@
+import qr from "../../assets/images/Qrcode 1.png"
+import google from "../../assets/images/google.png"
+import apple from "../../assets/images/download-appstore.png"
+import { FaFacebookSquare, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+
 const Footer = () => (
     <div className="bg-black">
         <div className="py-10 w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 text-white">
@@ -62,7 +67,26 @@ const Footer = () => (
                 <h4>Contact</h4>
             </div>
             {/* download app  */}
-            <div></div>
+            <div>
+                <h1>Download App</h1>
+                <p>Save $3 with App New User Only</p>
+                <div className="flex items-center justify-start gap-3">
+                    <div>
+                        <img src={qr} alt="" />
+                    </div>
+                    <div className="flex flex-col gap-2 justify-center items-center">
+                        <img src={google} alt="" />
+                        <img src={apple} alt="" />
+                    </div>
+                </div>
+                {/* social icon  */}
+                <div className="flex justify-between items-center text-2xl mt-1.5">
+                <FaFacebookSquare />
+                <FaTwitter></FaTwitter>
+                <FaInstagram></FaInstagram>
+                <FaLinkedin></FaLinkedin>
+                </div>
+            </div>
         </div>
     </div>
 );

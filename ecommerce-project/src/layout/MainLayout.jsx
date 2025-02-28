@@ -1,3 +1,4 @@
+import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 
 const MainLayout = () => {
@@ -5,6 +6,8 @@ const MainLayout = () => {
         <div>
             <Navbar></Navbar>
             <h1>Mian lay ouy</h1>
+            <div></div>
+            <Footer></Footer>
         </div>
     );
 };

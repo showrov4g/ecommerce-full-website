@@ -5,10 +5,10 @@ import { FaFacebookSquare, FaInstagram, FaLinkedin, FaTwitter } from "react-icon
 
 const Footer = () => (
     <div className="bg-black">
-        <div className="py-10 w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 text-white">
-            <div>
-                <div>
-                    <h1>Exclusive</h1>
+        <div className="py-10 w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3 items-center justify-start text-white">
+            <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-3">
+                    <h1 className="text-3xl font-semibold">Exclusive</h1>
                     <h4>Subscribe</h4>
                     <h6>Get 10% off your first order</h6>
                 </div>
